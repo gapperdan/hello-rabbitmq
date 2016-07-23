@@ -60,9 +60,9 @@ Sample response:
 ACCESS_REFUSED - Login was refused using authentication mechanism PLAIN. For details see the broker logfile
 ```
 #### Solution:
-- In the RabbitMQ admin UI (default: localhost:15672), creat a new user and give all permissions (e.g. user=demo, password=demo)
+- In the RabbitMQ admin UI (default: localhost:15672), create a new user and give all permissions (e.g. user=demo, password=demo)
 
-- Create application properties for your RabbitMQ instance:
+- Create properties for your RabbitMQ instance in src/main/resources/application.properties:
 ```
 spring.rabbitmq.username=demo
 spring.rabbitmq.password=demo
